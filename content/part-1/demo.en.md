@@ -2,7 +2,7 @@
 title: Demo
 weight: 2
 output: hugodown::md_document
-rmd_hash: f1060a2e1cbbbc4d
+rmd_hash: 3178b0ef06bcc70d
 
 ---
 
@@ -14,7 +14,7 @@ Check where we all are compared to [the instructions](/part-1/system-prep).
 
 -   For info, [R-universe API docs](https://ggseg.r-universe.dev/ui#api).
 
--   Generate a repository from [the template repository](https://github.com/maelle/applepie)[^1]
+-   Generate a repository from [the template repository](https://github.com/ropensci-training/applepie)[^1]
 
 -   `usethis::create_from_github("YOURUSERNAME/applepie")`.
 

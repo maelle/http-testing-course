@@ -13,7 +13,7 @@ Check where we all are compared to [the instructions](/part-1/system-prep).
 
 * For info, [R-universe API docs](https://ggseg.r-universe.dev/ui#api).
 
-* Generate a repository from [the template repository](https://github.com/maelle/applepie)[^applepie]
+* Generate a repository from [the template repository](https://github.com/ropensci-training/applepie)[^applepie]
 
 * `usethis::create_from_github("YOURUSERNAME/applepie")`.
 
