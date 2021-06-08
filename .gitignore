@@ -1,0 +1,9 @@
+.Rhistory
+.RData
+.Rproj.user
+node_modules
+public
+.Rdata
+.httr-oauth
+.DS_Store
+index.en_cache/

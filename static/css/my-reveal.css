@@ -1,0 +1,67 @@
+.reveal section pre {
+  box-shadow: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid lightgrey;
+}
+.reveal section pre:hover {
+  border: 1px solid grey;
+  transition: border 0.3s ease;
+}
+.reveal section pre > code {
+  padding: 10px;
+}
+.reveal table {
+  font-size: 0.65em;
+}
+ 
+.reveal section.side-by-side h1 {
+  position: absolute;
+}
+.reveal section.side-by-side h1:first-of-type {
+  left: 25%;
+}
+.reveal section.side-by-side h1:nth-of-type(2) {
+  right: 25%;
+}
+.reveal section[data-background-image] a,
+.reveal section[data-background-image] p,
+.reveal section[data-background-image] h2 {
+  color: white;
+}
+.reveal section[data-background-image] a {
+  text-decoration: underline;
+}
+.reveal p {
+  text-align: left;
+}
+.reveal section img {
+  border: none; 
+}
+.reveal figcaption p {
+  font-size: small;
+  text-align: center;
+}
+.subtitle p {
+  font-size: larger;
+  text-align: center;
+}
+div.twitter-tweet {
+margin-left: auto;
+margin-right: auto;
+}
+div.countdown {
+margin-left: auto;
+margin-right: auto;
+}
+.reveal a {
+  color: #AD003A;
+}
+.reveal a:hover {
+  color: #AD003A;
+  text-shadow: none;
+  border-bottom: 1px solid #AD003A; 
+}
+.controls-arrow {
+  color: #AD003A;
+}
