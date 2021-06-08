@@ -23,7 +23,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "Become an R Package Developer!"
+title = "useR! 2021 tutorial"
 weight = 1
 languageName = "English"
 
