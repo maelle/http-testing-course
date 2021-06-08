@@ -5,7 +5,7 @@ chapter: false
 slides: false
 menuTitle: Resources
 output: hugodown::md_document
-rmd_hash: 8c4e65bba14f58c0
+rmd_hash: 87b85aaa7a473896
 
 ---
 
@@ -15,6 +15,7 @@ rmd_hash: 8c4e65bba14f58c0
 -   [HTTP testing book](https://books.ropensci.org/http-testing)
 -   [R-hub blog post about mocking](https://blog.r-hub.io/2019/10/29/mocking/)
 -   [R-hub blog post about helper code and files for your testthat tests](https://blog.r-hub.io/2020/11/18/testthat-utility-belt/)
+-   [Vignette about testthat third edition](https://testthat.r-lib.org/articles/third-edition.html), [webinar about testthat third edition](https://www.rstudio.com/resources/webinars/testthat-3/).
 
 ## R package development
 
@@ -41,6 +42,10 @@ rmd_hash: 8c4e65bba14f58c0
 -   [A Beginner's Guide to Travis-CI for R](https://juliasilge.com/blog/beginners-guide-to-travis/) by Julia Silge
 
 -   [GitHub Actions for R](https://www.jimhester.com/talk/2020-rsc-github-actions/) by Jim Hester
+
+## HTTP requests
+
+-   [httr2](https://github.com/r-lib/httr2) is the successor of httr.
 
 ## CRAN submissions
 
