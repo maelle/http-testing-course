@@ -13,11 +13,116 @@ output: hugodown::md_document
 
 * add snippets corresponding to error.
 
+
+```{r eval=FALSE}
+
+test_that("get_packages() error", {
+  vcr::skip_if_vcr_off()
+  vcr::use_cassette("packages-error", {
+    expect_error(get_packages("maelle"), "take off")
+  })
+})
+```
+
+with cassette `packages-error.yml`
+
+```yaml
+http_interactions:
+- request:
+    method: get
+    uri: https://maelle.r-universe.dev/packages
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 502
+  recorded_at: 2021-05-27 13:44:41 GMT
+  recorded_with: vcr/0.6.5.93, webmockr/0.8.0
+
+```
+
 ## Test in case of an error then success
 
 [Snippets](/snippets/#tests-for-get_packages)
 
 * add snippets corresponding to error then success.
+
+```{r eval=FALSE}
+test_that("get_packages() retries", {
+  vcr::skip_if_vcr_off()
+  vcr::use_cassette("packages-retry", {
+    expect_message(pkgs <- get_packages("maelle"), "try")
+  })
+  expect_vector(pkgs, character())
+})
+
+```
+
+with cassette `packages-retry.yml`
+
+```yaml
+http_interactions:
+- request:
+    method: get
+    uri: https://maelle.r-universe.dev/packages
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 502
+- request:
+    method: get
+    uri: https://maelle.r-universe.dev/packages
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      server: nginx/1.18.0
+      date: Thu, 27 May 2021 13:44:41 GMT
+      content-type: application/json; charset=utf-8
+      content-length: '180'
+      connection: keep-alive
+      x-powered-by: Express
+      access-control-allow-origin: '*'
+      etag: W/"b4-gNSpI8aK0mIGDXSgCPEFSExATo0"
+    body:
+      encoding: UTF-8
+      file: no
+      string: |-
+        [
+          "cransays",
+          "crul",
+          "goodpress",
+          "hugodown",
+          "lockedatapkg",
+          "riem",
+          "roblog",
+          "rodev",
+          "rtimicropem",
+          "slugify",
+          "tinkr",
+          "vcr",
+          "webmockr",
+          "xml2"
+        ]
+  recorded_at: 2021-05-27 13:44:41 GMT
+  recorded_with: vcr/0.6.5.93, webmockr/0.8.0
+
+```
 
 * how to use a cassette interactively: source setup.R file, `vcr::insert_cassette()`.
 
@@ -29,12 +134,74 @@ Note: Authentication is useless for R-universe but we'll pretend it's not!
 
 [HTTP testing in R book chapter about security](https://books.ropensci.org/http-testing/security-chapter.html).
 
-* `use_r("packages2")`, [snippet](/snippets/#get_packages2).
+* `use_r("packages2")`.
 
-* `edit_r_environ(scope = "project")`
+
+```{r eval=FALSE}
+#' Packages
+#'
+#' @param universe universe to query
+#'
+#' @return A character vector.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_packages2("ropensci")
+#'}
+get_packages2 <- function(universe) {
+  url <- sprintf("https://%s.r-universe.dev/packages", universe)
+  token <- Sys.getenv("SECRET_PLANET_TOKEN")
+  if (!nzchar(token)) {
+    stop("Token for packages not found. See ?get_packages2")
+  }
+
+  resp <- httr::RETRY("GET", url,
+    httr::add_headers("Authorization" = paste("token", token)))
+  httr::stop_for_status(resp, "take off")
+  content <- httr::content(resp)
+  unlist(content)
+}
+```
+
+* `edit_r_environ(scope = "project")` to add (empty line at the end needed)
+
+```
+SECRET_PLANET_TOKEN="top-secret-token"
+
+```
 
 * `use_git_ignore(".Renviron")`
 
-* `setup.R` or `helper.R`?
+* `use_test("packages2")`
+
+```{r eval=FALSE}
+test_that("get_packages2() works", {
+  vcr::use_cassette("packages2", {
+    pkgs <- get_packages("maelle")
+  })
+  expect_vector(pkgs, character())
+})
+```
+
+* Oh no our secret is in the cassette `packages2.yml`! 
+
+* Delete the cassette `packages2.yml`.
+
+* vcr config in `tests/testthat/setup-applepie.R`
+
+```{r eval=FALSE}
+library("vcr") # *Required* as vcr is set up on loading
+invisible(vcr::vcr_configure(
+  dir = vcr::vcr_test_path("fixtures"),
+  filter_request_headers = list(Authorization = "not-my-secret-hehe")
+))
+vcr::check_cassette_names()
+if (!nzchar(Sys.getenv("SECRET_PLANET_TOKEN"))) {
+  Sys.setenv("SECRET_PLANET_TOKEN" = "foobar")
+}
+```
+
+* [`setup.R` or `helper.R`](https://blog.r-hub.io/2020/11/18/testthat-utility-belt/#code-called-in-your-tests)?
 
 * BACK TO SLIDES.

@@ -15,35 +15,6 @@ For copy-pasting during demos.
 
 with automatic cassette.
 
-```{r eval=FALSE}
-
-test_that("get_packages() error", {
-  vcr::skip_if_vcr_off()
-  vcr::use_cassette("packages-error", {
-    expect_error(get_packages("maelle"), "take off")
-  })
-})
-```
-
-with cassette
-
-```yaml
-http_interactions:
-- request:
-    method: get
-    uri: https://maelle.r-universe.dev/packages
-    body:
-      encoding: ''
-      string: ''
-    headers:
-      Accept: application/json, text/xml, application/xml, */*
-  response:
-    status:
-      status_code: 502
-  recorded_at: 2021-05-27 13:44:41 GMT
-  recorded_with: vcr/0.6.5.93, webmockr/0.8.0
-
-```
 
 ```{r eval=FALSE}
 test_that("get_packages() retries", {
@@ -126,46 +97,8 @@ http_interactions:
 ## `get_packages2()`
 
 
-```{r eval=FALSE}
-#' Packages
-#'
-#' @param universe universe to query
-#'
-#' @return A character vector.
-#' @export
-#'
-#' @examples
-#' \dontrun{
-#' get_packages2("ropensci")
-#'}
-get_packages2 <- function(universe) {
-  url <- sprintf("https://%s.r-universe.dev/packages", universe)
-  token <- Sys.getenv("SECRET_PLANET_TOKEN")
-  if (!nzchar(token)) {
-    stop("Token for packages not found. See ?get_packages2")
-  }
 
-  resp <- httr::RETRY("GET", url,
-    httr::add_headers("Authorization" = paste("token", token)))
-  httr::stop_for_status(resp, "take off")
-  content <- httr::content(resp)
-  unlist(content)
-}
-```
 
-vcr config in `tests/testthat/setup-applepie.R`
-
-```{r eval=FALSE}
-library("vcr") # *Required* as vcr is set up on loading
-invisible(vcr::vcr_configure(
-  dir = vcr::vcr_test_path("fixtures"),
-  filter_request_headers = list(Authorization = "not-my-secret-hehe")
-))
-vcr::check_cassette_names()
-if (!nzchar(Sys.getenv("SECRET_PLANET_TOKEN"))) {
-  Sys.setenv("SECRET_PLANET_TOKEN" = "foobar")
-}
-```
 
 Test itself
 
