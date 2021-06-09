@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: c226455d4ee6c0d2
+rmd_hash: 83ece2927719f36d
 
 ---
 
@@ -43,9 +43,9 @@ Some built-in skippers: operating system, CRAN, etc.
 
 ------------------------------------------------------------------------
 
-## Time for a demo :rocket:
+## Demo :rocket:
 
-Notes on the [course website](/part-3/demo)
+{{% note %}} Time for a demo. {{% /note %}}
 
 ------------------------------------------------------------------------
 

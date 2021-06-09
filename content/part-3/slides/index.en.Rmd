@@ -46,10 +46,12 @@ Another useful thing we will see is how to define a custom skipper. We will not 
 
 ---
 
-## Time for a demo :rocket:
 
-Notes on the [course website](/part-3/demo)
+## Demo :rocket:
 
+{{% note %}}
+Time for a demo.
+{{% /note %}}
 
 ---
 
