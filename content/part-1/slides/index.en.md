@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: 9ce2a237def7fc9b
+rmd_hash: ae7413ed6a6cb898
 
 ---
 
@@ -146,7 +146,15 @@ And it has an [API](https://ggseg.r-universe.dev/ui#api)! :tada:
 
 :traffic_light: Set up continuous integration.
 
-{{% note %}} We'll first do a few quote simple quote things with our package, so we all get set up. We'll then be ready to add HTTP tests. {{% /note %}} ---
+{{% note %}} We'll first do a few quote simple quote things with our package, so we all get set up. We'll then be ready to add HTTP tests. {{% /note %}}
+
+------------------------------------------------------------------------
+
+## Demo :rocket:
+
+{{% note %}} Time for a demo. {{% /note %}}
+
+------------------------------------------------------------------------
 
 ## Back from the demo
 
@@ -154,7 +162,9 @@ A package with two functions, non zero test coverage, continuous integration... 
 
 But what if our internet connection gets fragile? :scream:
 
-{{% note %}} We are at a good development stage, but we need to get to the heart of today's topic. {{% /note %}} ---
+{{% note %}} We are at a good development stage, but we need to get to the heart of today's topic. {{% /note %}}
+
+------------------------------------------------------------------------
 
 ## Test fixtures
 
@@ -193,6 +203,12 @@ This is the idea behind *vcr* and *httptest*. (*webfakes* is a bit different).
 Let's try *vcr*!
 
 {{% note %}} Introduce the idea of mocking HTTP interactions. webfakes provides a way to define a whole web server so it's a bit different; useful in some cases for sure. Today we will concentrate on vcr. {{% /note %}}
+
+------------------------------------------------------------------------
+
+## Demo :rocket:
+
+{{% note %}} Time for a demo. {{% /note %}}
 
 ------------------------------------------------------------------------
 

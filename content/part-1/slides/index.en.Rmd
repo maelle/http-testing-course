@@ -171,6 +171,15 @@ We will use the API of the cool R-universe project as a playground. The R-univer
 {{% note %}}
 We'll first do a few quote simple quote things with our package, so we all get set up. We'll then be ready to add HTTP tests.
 {{% /note %}}
+
+---
+
+## Demo :rocket:
+
+{{% note %}}
+Time for a demo.
+{{% /note %}}
+
 ---
 
 ## Back from the demo
@@ -182,6 +191,7 @@ But what if our internet connection gets fragile? :scream:
 {{% note %}}
 We are at a good development stage, but we need to get to the heart of today's topic.
 {{% /note %}}
+
 ---
 
 ## Test fixtures
@@ -222,6 +232,14 @@ Let's try *vcr*!
 
 {{% note %}}
 Introduce the idea of mocking HTTP interactions. webfakes provides a way to define a whole web server so it's a bit different; useful in some cases for sure. Today we will concentrate on vcr.
+{{% /note %}}
+
+---
+
+## Demo :rocket:
+
+{{% note %}}
+Time for a demo.
 {{% /note %}}
 
 ---
