@@ -11,14 +11,7 @@ For copy-pasting during demos.
 
 ## Tests for `get_packages()`
 
-```{r eval=FALSE}
-test_that("get_packages() works", {
-  vcr::use_cassette("packages", {
-    pkgs <- get_packages("maelle")
-  })
-  expect_vector(pkgs, character())
-})
-```
+
 
 with automatic cassette.
 
@@ -128,27 +121,7 @@ http_interactions:
 
 ## `get_maintainers()`
 
-```{r eval=FALSE}
-#' Maintainers
-#'
-#' @inheritParams get_packages
-#'
-#' @return A character vector.
-#' @export
-#'
-#' @examples
-#' get_maintainers("ggseg")
-get_maintainers <- function(universe) {
-  url <- sprintf("https://%s.r-universe.dev/stats/maintainers", universe)
-  resp <- httr::GET(url)
-  httr::stop_for_status(resp)
-  content <- httr::content(resp)
-  temp_file <- withr::local_tempfile()
-  writeLines(content, temp_file)
-  maintainers <- jsonlite::stream_in(file(temp_file), verbose = FALSE)
-  tibble::as_tibble(maintainers)
-}
-```
+
 
 ## `get_packages2()`
 

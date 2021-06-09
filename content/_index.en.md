@@ -12,4 +12,4 @@ In this tutorial we shall use HTTP testing with the vcr package as an opportunit
 After this tutorial, you will be able to use the handy vcr package for your package wrapping a web API or any other web resource, but you will also have gained skills transferable to your other testing endeavours!
 Come and learn from rOpenSci expertise!
 
-Pre-requisites: basic R package development with devtools, testthat.
+[Pre-requisites](/part-1/system-prep)

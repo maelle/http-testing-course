@@ -37,11 +37,40 @@ Check where we all are compared to [the instructions](/part-1/system-prep).
 
 * `usethis::use_test("packages")` ([testthat expectations](https://testthat.r-lib.org/reference/index.html))
 
+```{r eval=FALSE}
+test_that("get_packages() works", {
+  pkgs <- get_packages("maelle")
+  expect_vector(pkgs, character())
+})
+```
+
 * `devtools::test()` or test button on the file or test via the build panel. Possibility to set keyboard shortcuts.
 
 * `covr::report()`.
 
 * Add a new function `use_r("maintainers")`, `use_package("withr")`, `use_package("tibble")`.
+
+```{r eval=FALSE}
+#' Maintainers
+#'
+#' @inheritParams get_packages
+#'
+#' @return A character vector.
+#' @export
+#'
+#' @examples
+#' get_maintainers("ggseg")
+get_maintainers <- function(universe) {
+  url <- sprintf("https://%s.r-universe.dev/stats/maintainers", universe)
+  resp <- httr::GET(url)
+  httr::stop_for_status(resp)
+  content <- httr::content(resp)
+  temp_file <- withr::local_tempfile()
+  writeLines(content, temp_file)
+  maintainers <- jsonlite::stream_in(file(temp_file), verbose = FALSE)
+  tibble::as_tibble(maintainers)
+}
+```
 
 * `covr::report()`.
 
@@ -62,6 +91,15 @@ Check where we all are compared to [the instructions](/part-1/system-prep).
 * Read example test, delete it.
 
 * Insert `vcr::use_cassette("packages")` in a test. Have a look at the files added. If this were not an online tutorial, turn off wifi and run the test again, it works!
+
+```{r eval=FALSE}
+test_that("get_packages() works", {
+  vcr::use_cassette("packages", {
+    pkgs <- get_packages("maelle")
+  })
+  expect_vector(pkgs, character())
+})
+```
 
 * BACK TO SLIDES.
 
