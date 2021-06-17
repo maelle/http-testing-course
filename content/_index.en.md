@@ -4,6 +4,8 @@ title: "GET better at testing your R package!"
 
 # GET better at testing your R package!
 
+[useR! event](https://www.conftool.org/user2021/index.php?page=browseSessions&form_session=2#paperID316)
+
 This tutorial is about **Advanced testing of R packages, with HTTP testing as a case study**.
 Unit tests have numerous advantages like preventing future breakage of your package and helping you define features (test-driven development).
 In many introductions to package development you learn how to set up testthat infrastructure, and how to write a few [“cute little tests”](https://testthat.r-lib.org/articles/test-fixtures.html#test-fixtures) with only inline assertions.
