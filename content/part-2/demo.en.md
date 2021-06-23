@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: 795f932b8c731b9c
+rmd_hash: 2cfa91159978f1c4
 
 ---
 
@@ -192,7 +192,7 @@ Note: Authentication is useless for R-universe but we'll pretend it's not!
 
 -   Delete the cassette `packages2.yml`.
 
--   vcr config in `tests/testthat/setup-applepie.R`
+-   vcr config in `tests/testthat/setup-applepie.R` ([vcr config docs](https://docs.ropensci.org/vcr/articles/configuration.html#filter-sensitive-data))
 
 <div class="highlight">
 
@@ -203,7 +203,7 @@ Note: Authentication is useless for R-universe but we'll pretend it's not!
 <span class='o'>)</span><span class='o'>)</span>
 <span class='nf'>vcr</span><span class='nf'>::</span><span class='nf'><a href='https://docs.ropensci.org/vcr/reference/check_cassette_names.html'>check_cassette_names</a></span><span class='o'>(</span><span class='o'>)</span>
 <span class='kr'>if</span> <span class='o'>(</span><span class='o'>!</span><span class='nf'><a href='https://rdrr.io/r/base/nchar.html'>nzchar</a></span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/base/Sys.getenv.html'>Sys.getenv</a></span><span class='o'>(</span><span class='s'>"SECRET_PLANET_TOKEN"</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span> <span class='o'>&#123;</span>
-  <span class='nf'><a href='https://rdrr.io/r/base/Sys.setenv.html'>Sys.setenv</a></span><span class='o'>(</span><span class='s'>"SECRET_PLANET_TOKEN"</span> <span class='o'>=</span> <span class='s'>"foobar"</span><span class='o'>)</span>
+  <span class='nf'><a href='https://rdrr.io/r/base/Sys.setenv.html'>Sys.setenv</a></span><span class='o'>(</span><span class='s'>"SECRET_PLANET_TOKEN"</span> <span class='o'>=</span> <span class='s'>"abcd123"</span><span class='o'>)</span>
 <span class='o'>&#125;</span></code></pre>
 
 </div>

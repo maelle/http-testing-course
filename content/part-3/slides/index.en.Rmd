@@ -107,6 +107,16 @@ Reading docs and learning to read the source of other packages is the recipe to 
 
 ---
 
+## HTTP testing
+
+* vcr handy for usual workflows, and highly configurable.
+
+* Other HTTP testing packages: httptest, webfakes.
+
+* For databases, see dittodb!
+
+---
+
 ## Thank you, useR! team & participants!
 
 And time for last questions!

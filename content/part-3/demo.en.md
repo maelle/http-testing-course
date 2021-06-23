@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: ecb4b646ab8f8c1a
+rmd_hash: 1942fb8611e760e0
 
 ---
 
@@ -57,7 +57,7 @@ rmd_hash: ecb4b646ab8f8c1a
 
 -   BACK TO SLIDES.
 
-## Scheduled CI run with real request
+## Scheduled CI run with real requests
 
 -   Add secret to GitHub repo.
 

@@ -49,7 +49,7 @@ test_that("get_packages() works", {
 
 * BACK TO SLIDES.
 
-## Scheduled CI run with real request
+## Scheduled CI run with real requests
 
 * Add secret to GitHub repo.
 

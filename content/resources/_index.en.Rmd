@@ -19,6 +19,9 @@ output: hugodown::md_document
 
 * [Vignette about testthat third edition](https://testthat.r-lib.org/articles/third-edition.html), [webinar about testthat third edition](https://www.rstudio.com/resources/webinars/testthat-3/).
 
+## Database testing
+
+* [dittodb](https://docs.ropensci.org/dittodb/).
 
 ## R package development
 

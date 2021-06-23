@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: 83ece2927719f36d
+rmd_hash: 6f9af3f20b1cb5e6
 
 ---
 
@@ -90,6 +90,16 @@ Get inspired by others!
 -   Read testthat docs, the HTTP testing in R book, etc.
 
 {{% note %}} Reading docs and learning to read the source of other packages is the recipe to success. Of course learning to ask for help is also important. {{% /note %}}
+
+------------------------------------------------------------------------
+
+## HTTP testing
+
+-   vcr handy for usual workflows, and highly configurable.
+
+-   Other HTTP testing packages: httptest, webfakes.
+
+-   For databases, see dittodb!
 
 ------------------------------------------------------------------------
 

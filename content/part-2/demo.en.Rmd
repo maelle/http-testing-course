@@ -188,7 +188,7 @@ test_that("get_packages2() works", {
 
 * Delete the cassette `packages2.yml`.
 
-* vcr config in `tests/testthat/setup-applepie.R`
+* vcr config in `tests/testthat/setup-applepie.R` ([vcr config docs](https://docs.ropensci.org/vcr/articles/configuration.html#filter-sensitive-data))
 
 ```{r eval=FALSE}
 library("vcr") # *Required* as vcr is set up on loading
@@ -198,7 +198,7 @@ invisible(vcr::vcr_configure(
 ))
 vcr::check_cassette_names()
 if (!nzchar(Sys.getenv("SECRET_PLANET_TOKEN"))) {
-  Sys.setenv("SECRET_PLANET_TOKEN" = "foobar")
+  Sys.setenv("SECRET_PLANET_TOKEN" = "abcd123")
 }
 ```
 
