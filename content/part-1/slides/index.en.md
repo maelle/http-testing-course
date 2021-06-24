@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: ae7413ed6a6cb898
+rmd_hash: 5caa9ae9569ddadd
 
 ---
 
@@ -126,7 +126,7 @@ Gaining specific knowledge about HTTP testing via vcr, general knowledge about t
 
 Client for R-universe API. :rocket:
 
-[rOpenSci comm call about R-universe](https://ropensci.org/commcalls/may2021-r-universe/).
+[Jeroen Ooms' keynote talk](https://www.conftool.org/user2021/index.php?page=browseSessions&form_session=34#paperID355).
 
 > R-universe is new a platform by rOpenSci for publishing and discovering R packages, Rmd articles, and other R based content.
 

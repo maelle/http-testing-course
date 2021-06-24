@@ -146,7 +146,7 @@ To be shown: slides, demo, snippets, search, repo.
 
 Client for R-universe API. :rocket:
 
-[rOpenSci comm call about R-universe](https://ropensci.org/commcalls/may2021-r-universe/).
+[Jeroen Ooms' keynote talk](https://www.conftool.org/user2021/index.php?page=browseSessions&form_session=34#paperID355).
 
 > R-universe is new a platform by rOpenSci for publishing and discovering R packages, Rmd articles, and other R based content.
 
