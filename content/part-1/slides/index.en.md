@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: 5caa9ae9569ddadd
+rmd_hash: 24999f4002b36bda
 
 ---
 
@@ -128,7 +128,7 @@ Client for R-universe API. :rocket:
 
 [Jeroen Ooms' keynote talk](https://www.conftool.org/user2021/index.php?page=browseSessions&form_session=34#paperID355).
 
-> R-universe is new a platform by rOpenSci for publishing and discovering R packages, Rmd articles, and other R based content.
+> R-universe is a new platform by rOpenSci for publishing and discovering R packages, Rmd articles, and other R based content.
 
 And it has an [API](https://ggseg.r-universe.dev/ui#api)! :tada:
 
