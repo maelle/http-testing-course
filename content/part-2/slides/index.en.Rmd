@@ -83,9 +83,11 @@ A big challenge when interacting with web resources is the infrastructure for se
 
 * What are the secrets your package use? API keys?
 
-* Where do they live? Headers? Files?
+* Use special accounts for testing if possible.
 
-* Learn how to keep them safe, double-check.
+* Where do secrets live? Headers? Files?
+
+* Learn how to keep secrets safe, double-check.
 
 * Learn how to handle mistakes. (:speak_no_evil: I recently leaked my own GitHub PAT!)
 

@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: d0c11b64b67f5610
+rmd_hash: 7735db444260cb8c
 
 ---
 
@@ -75,9 +75,11 @@ Say the API need a secret...
 
 -   What are the secrets your package use? API keys?
 
--   Where do they live? Headers? Files?
+-   Use special accounts for testing if possible.
 
--   Learn how to keep them safe, double-check.
+-   Where do secrets live? Headers? Files?
+
+-   Learn how to keep secrets safe, double-check.
 
 -   Learn how to handle mistakes. (:speak_no_evil: I recently leaked my own GitHub PAT!)
 
