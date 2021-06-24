@@ -47,6 +47,10 @@ a {
     color: var(--MAIN-LINK-color);
 }
 
+#body-inner a {
+    font-weight: bolder;
+}
+
 .anchor {
     color: var(--MAIN-ANCHOR-color);
 }
