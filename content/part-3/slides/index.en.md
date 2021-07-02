@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: 6f9af3f20b1cb5e6
+rmd_hash: 24ab7e3bfcc97eab
 
 ---
 
@@ -104,6 +104,8 @@ Get inspired by others!
 ------------------------------------------------------------------------
 
 ## Thank you, useR! team & participants!
+
+Thanks in particular to Heather Turner (technical helper), Liz Hare (useR! accessibility team) and Yanina Bellini Saibene (global coordinator). And thanks to all other useR! volunteers!
 
 And time for last questions!
 

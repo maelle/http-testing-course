@@ -119,6 +119,9 @@ Reading docs and learning to read the source of other packages is the recipe to 
 
 ## Thank you, useR! team & participants!
 
+Thanks in particular to Heather Turner (technical helper), Liz Hare (useR! accessibility team) and Yanina Bellini Saibene (global coordinator).
+And thanks to all other useR! volunteers!
+
 And time for last questions!
 
 {{% note %}}
