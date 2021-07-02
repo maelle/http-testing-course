@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: 1942fb8611e760e0
+rmd_hash: d0ec3019ce22989d
 
 ---
 
@@ -21,7 +21,7 @@ rmd_hash: 1942fb8611e760e0
 
 </div>
 
--   Modify the error message, re-run the test.
+-   Modify the [error message](https://style.tidyverse.org/error-messages.html), re-run the test.
 
 ## Custom skipper
 

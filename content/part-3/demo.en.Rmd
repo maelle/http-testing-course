@@ -17,7 +17,7 @@ test_that("get_packages2 errors well", {
 })
 ```
 
-* Modify the error message, re-run the test.
+* Modify the [error message](https://style.tidyverse.org/error-messages.html), re-run the test.
 
 ## Custom skipper
 
