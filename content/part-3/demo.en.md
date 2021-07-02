@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: d0ec3019ce22989d
+rmd_hash: 250acea980d9e7ab
 
 ---
 
@@ -59,7 +59,7 @@ rmd_hash: d0ec3019ce22989d
 
 ## Scheduled CI run with real requests
 
--   Add secret to GitHub repo.
+-   Add [secret to GitHub repo](https://docs.github.com/en/actions/reference/encrypted-secrets).
 
 -   Adding a workflow with scheduled weekly runs with vcr turned off.
 

@@ -51,7 +51,7 @@ test_that("get_packages() works", {
 
 ## Scheduled CI run with real requests
 
-* Add secret to GitHub repo.
+* Add [secret to GitHub repo](https://docs.github.com/en/actions/reference/encrypted-secrets).
 
 * Adding a workflow with scheduled weekly runs with vcr turned off.
 
