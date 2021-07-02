@@ -2,7 +2,7 @@
 title: Preparation
 weight: 1
 output: hugodown::md_document
-rmd_hash: 61838e6f5f975702
+rmd_hash: 1f2364a203a219bd
 
 ---
 
@@ -30,7 +30,7 @@ Here are some setup instructions. Please email me at msmaellesalmon at gmail dot
 
 -   optional, usethis and devtools setup: [usethis setup article](https://usethis.r-lib.org/articles/articles/usethis-setup.html).
 
--   `install.packages(c("vcr", "tibble", "withr", "httr", "jsonlite", "covr", "whoami"))`.
+-   `install.packages(c("vcr", "tibble", "withr", "httr", "jsonlite", "covr", "whoami", "DT"))`.
 
 ## Bonus if you have time
 

@@ -28,7 +28,7 @@ Here are some setup instructions. Please email me at msmaellesalmon at gmail dot
 
 * optional, usethis and devtools setup: [usethis setup article](https://usethis.r-lib.org/articles/articles/usethis-setup.html).
 
-* `install.packages(c("vcr", "tibble", "withr", "httr", "jsonlite", "covr", "whoami"))`.
+* `install.packages(c("vcr", "tibble", "withr", "httr", "jsonlite", "covr", "whoami", "DT"))`.
 
 ## Bonus if you have time
 
