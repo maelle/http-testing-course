@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: 2cfa91159978f1c4
+rmd_hash: 732d48dcc70a7243
 
 ---
 
@@ -181,7 +181,7 @@ Note: Authentication is useless for R-universe but we'll pretend it's not!
 
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='nf'>test_that</span><span class='o'>(</span><span class='s'>"get_packages2() works"</span>, <span class='o'>&#123;</span>
   <span class='nf'>vcr</span><span class='nf'>::</span><span class='nf'><a href='https://docs.ropensci.org/vcr/reference/use_cassette.html'>use_cassette</a></span><span class='o'>(</span><span class='s'>"packages2"</span>, <span class='o'>&#123;</span>
-    <span class='nv'>pkgs</span> <span class='o'>&lt;-</span> <span class='nf'>get_packages</span><span class='o'>(</span><span class='s'>"maelle"</span><span class='o'>)</span>
+    <span class='nv'>pkgs</span> <span class='o'>&lt;-</span> <span class='nf'>get_packages2</span><span class='o'>(</span><span class='s'>"maelle"</span><span class='o'>)</span>
   <span class='o'>&#125;</span><span class='o'>)</span>
   <span class='nf'>expect_vector</span><span class='o'>(</span><span class='nv'>pkgs</span>, <span class='nf'><a href='https://rdrr.io/r/base/character.html'>character</a></span><span class='o'>(</span><span class='o'>)</span><span class='o'>)</span>
 <span class='o'>&#125;</span><span class='o'>)</span></code></pre>
