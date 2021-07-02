@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: 24999f4002b36bda
+rmd_hash: 08de572c46312b42
 
 ---
 
@@ -20,6 +20,20 @@ rmd_hash: 24999f4002b36bda
 :wave: Bonjour !
 
 {{% note %}} Hello and thank you for coming! {{% /note %}}
+
+------------------------------------------------------------------------
+
+## Code of Conduct
+
+[Code of Conduct](https://user2021.r-project.org/participation/coc/) including how to make reports.
+
+------------------------------------------------------------------------
+
+## Recording
+
+I'll be recording from now.
+
+You can turn your camera off and change your display name if you want.
 
 ------------------------------------------------------------------------
 
@@ -118,7 +132,7 @@ Gaining specific knowledge about HTTP testing via vcr, general knowledge about t
 
 :link: <https://http-testing-r.netlify.app/>
 
-{{% note %}} To be shown: slides, demo, snippets, search, repo. {{% /note %}}
+{{% note %}} To be shown: slides, demo, snippets, search, repo including where to find the R Markdown / Markdown files. {{% /note %}}
 
 ------------------------------------------------------------------------
 

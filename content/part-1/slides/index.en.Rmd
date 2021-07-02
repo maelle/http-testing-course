@@ -23,6 +23,20 @@ Hello and thank you for coming!
 
 ---
 
+## Code of Conduct
+
+[Code of Conduct](https://user2021.r-project.org/participation/coc/) including how to make reports.
+
+---
+
+## Recording
+
+I'll be recording from now.
+
+You can turn your camera off and change your display name if you want.
+
+---
+
 ## Why test your package?
 
 `r hugodown::embed_tweet("1085238646100451329")`
@@ -137,7 +151,7 @@ We have an exciting program!
 :link: https://http-testing-r.netlify.app/ 
 
 {{% note %}}
-To be shown: slides, demo, snippets, search, repo.
+To be shown: slides, demo, snippets, search, repo including where to find the R Markdown / Markdown files.
 {{% /note %}}
 
 ---

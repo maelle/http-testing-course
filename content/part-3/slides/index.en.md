@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: 24ab7e3bfcc97eab
+rmd_hash: f7edbf63fcac4280
 
 ---
 
@@ -107,7 +107,17 @@ Get inspired by others!
 
 Thanks in particular to Heather Turner (technical helper), Liz Hare (useR! accessibility team) and Yanina Bellini Saibene (global coordinator). And thanks to all other useR! volunteers!
 
-And time for last questions!
-
 {{% note %}} Thank you for participating! Let's tackle more questions before it's time to log off. {{% /note %}}
+
+------------------------------------------------------------------------
+
+## Questions
+
+-   Right now if we have time
+
+-   In the lounge during the next days but asynchronously.
+
+-   [rOpenSci forum](https://discuss.ropensci.org/), [RStudio community forum](https://community.rstudio.com/).
+
+------------------------------------------------------------------------
 
