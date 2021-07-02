@@ -7,7 +7,7 @@ layout: list
 weight: 11
 output: hugodown::md_document
 countdown: true
-rmd_hash: f7edbf63fcac4280
+rmd_hash: 63d53009751780be
 
 ---
 
@@ -113,7 +113,7 @@ Thanks in particular to Heather Turner (technical helper), Liz Hare (useR! acces
 
 ## Questions
 
--   Right now if we have time
+-   Right now if we have time.
 
 -   In the lounge during the next days but asynchronously.
 
