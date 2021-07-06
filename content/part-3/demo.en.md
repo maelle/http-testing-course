@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: 250acea980d9e7ab
+rmd_hash: 07923ec9bad5aa6c
 
 ---
 
@@ -68,7 +68,8 @@ rmd_hash: 250acea980d9e7ab
 # https://community.rstudio.com/new-topic?category=Package%20development&tags=github-actions
 on:
   push:
-    - main
+    branches:
+      - main
   schedule:
     - cron:  '0 12 * * *'
 
