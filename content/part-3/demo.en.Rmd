@@ -35,6 +35,8 @@ skip_if_not_beyonce <- function() {
 }
 ```
 
+* Add whoami as dependency. `usethis::use_package("whoami", type = "Suggests")`
+
 * Use it in a new test
 
 ```{r eval=FALSE}

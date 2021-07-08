@@ -2,7 +2,7 @@
 title: Demo
 weight: 1
 output: hugodown::md_document
-rmd_hash: 07923ec9bad5aa6c
+rmd_hash: 80e7d52de84e8d43
 
 ---
 
@@ -40,6 +40,8 @@ rmd_hash: 07923ec9bad5aa6c
 <span class='o'>&#125;</span></code></pre>
 
 </div>
+
+-   Add whoami as dependency. `usethis::use_package("whoami", type = "Suggests")`
 
 -   Use it in a new test
 
